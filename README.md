@@ -4,6 +4,13 @@
 
 * This Project is backed by **Firebase Firestore** as a real-time database.
 
+* This Project uses **Angular Material** for styling.
+
+# Overview 
+
+![layout](./img/layout.png)
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
