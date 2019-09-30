@@ -2,7 +2,7 @@
 
 * This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
 
-* This Project is backed by **Firebase Firestore** as a real-time database 
+* This Project is backed by **Firebase Firestore** as a real-time database.
 
 ## Development server
 
