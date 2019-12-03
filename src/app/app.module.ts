@@ -12,6 +12,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth'
 import { environment } from '../environments/environment';
 import { CoreModule } from './modules/core/core.module';
 import { LayoutModule } from './modules/layout/layout.module';
+import { UserModule } from './modules/user/user.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { LayoutModule } from './modules/layout/layout.module';
     AngularFirestoreModule,       // need it for database feature
     AngularFireAuthModule, // need it for auth feature 
     CoreModule,
-    LayoutModule             
+    LayoutModule, 
+    UserModule            
   ],
   providers: [],
   bootstrap: [AppComponent]

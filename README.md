@@ -10,6 +10,7 @@
 
 ![layout](./img/layout.png)
 
+![form](./img/form.png)
 
 ## Development server
 
