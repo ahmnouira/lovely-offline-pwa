@@ -8,7 +8,7 @@ import { AngularFirestore } from '@angular/fire/firestore';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'lovely-offline';
+  title = 'lovely-offline-pwa';
   notes$ : Observable<any[]>
   constructor(db : AngularFirestore) {
     this.notes$ = db.collection('notes').valueChanges();

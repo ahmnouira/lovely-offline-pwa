@@ -12,19 +12,19 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$lovely-offline-primary: mat-palette($mat-indigo);
-$lovely-offline-accent: mat-palette($mat-pink, A200, A100, A400);
+$lovely-offline-pwa-primary: mat-palette($mat-indigo);
+$lovely-offline-pwa-accent: mat-palette($mat-pink, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
-$lovely-offline-warn: mat-palette($mat-red);
+$lovely-offline-pwa-warn: mat-palette($mat-red);
 
 // Create the theme object (a Sass map containing all of the palettes).
-$lovely-offline-theme: mat-light-theme($lovely-offline-primary, $lovely-offline-accent, $lovely-offline-warn);
+$lovely-offline-pwa-theme: mat-light-theme($lovely-offline-pwa-primary, $lovely-offline-pwa-accent, $lovely-offline-pwa-warn);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include angular-material-theme($lovely-offline-theme);
+@include angular-material-theme($lovely-offline-pwa-theme);
 
 /* You can add global styles to this file, and also import other style files */
 

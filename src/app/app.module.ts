@@ -1,11 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore'
 import { AngularFireAuthModule } from '@angular/fire/auth'
@@ -16,7 +13,7 @@ import { UserModule } from './modules/user/user.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,7 +24,7 @@ import { UserModule } from './modules/user/user.module';
     AngularFireAuthModule, // need it for auth feature 
     CoreModule,
     LayoutModule, 
-    UserModule            
+    UserModule           
   ],
   providers: [],
   bootstrap: [AppComponent]

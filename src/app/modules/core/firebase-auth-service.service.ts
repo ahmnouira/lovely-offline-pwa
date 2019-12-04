@@ -47,10 +47,10 @@ export class FirebaseAuthServiceService {
   }
 
   // register
-  public signUpFirebase(user : User) {
+  public signUpFirebase({email, password}) {
     this.isLoading$.next(true);
     this.handleErrorOrSuccess(() => {
-      return this.afAuth.auth.createUserWithEmailAndPassword(user.email, user.uid);
+      return this.afAuth.auth.createUserWithEmailAndPassword(email, password);
     });
   }
 

@@ -35,20 +35,21 @@ export class UserContainerComponent implements OnInit {
 
   public signUp() {
     this.checkFormValidity(()=> {
+      console.log(this.loginForm.value);
       this.authService.signUpFirebase(this.loginForm.value);
     });
   }
 
   public login() {
     this.checkFormValidity(()=> {
-      this.authService.signUpFirebase(this.loginForm.value);
+      this.authService.loginFirebase(this.loginForm.value);
     });
   }
 
   private checkFormValidity(cb) {
+    console.log("loginForm: ", this.loginForm.valid);
     if(this.loginForm.valid) {
       cb();
-
     } else {
       this.errorMessges$.next("Please enter correct Email and Password value");
     }
